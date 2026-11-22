@@ -4,9 +4,10 @@
   "version": "1.0.0",
   "description": "JobaBoard - a free infinite digital whiteboard for brainstorming, planning and visual teamwork.",
   "main": "./out/main/index.js",
-  "author": "JobaBoard",
+  "author": "ahmadjoba96",
+  "repository": { "type": "git", "url": "https://github.com/ahmadjoba96/JobaBoard.git" },
   "license": "MIT",
-  "homepage": "https://github.com",
+  "homepage": "https://github.com/ahmadjoba96/JobaBoard",
   "scripts": {
     "dev": "electron-vite dev",
     "build": "electron-vite build",

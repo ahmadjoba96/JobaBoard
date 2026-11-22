@@ -33,6 +33,6 @@ portable:
   artifactName: JobaBoard-Portable-${version}.exe
 publish:
   provider: github
-  owner: OWNER_PLACEHOLDER
+  owner: ahmadjoba96
   repo: JobaBoard
   releaseType: release
