@@ -1,0 +1,52 @@
+{
+  "name": "jobaboard",
+  "productName": "JobaBoard",
+  "version": "1.0.0",
+  "description": "JobaBoard - a free infinite digital whiteboard for brainstorming, planning and visual teamwork.",
+  "main": "./out/main/index.js",
+  "author": "JobaBoard",
+  "license": "MIT",
+  "homepage": "https://github.com",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "dist": "electron-vite build && electron-builder --win --publish never"
+  },
+  "dependencies": {
+    "electron-updater": "6.8.11",
+    "express": "4.22.3",
+    "lib0": "0.2.120",
+    "qrcode": "1.5.4",
+    "ws": "8.23.0",
+    "y-protocols": "1.0.7",
+    "yjs": "13.6.33"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.25",
+    "@types/node": "22.20.5",
+    "@types/qrcode": "1.5.6",
+    "@types/react": "18.3.31",
+    "@types/react-dom": "18.3.7",
+    "@types/ws": "8.18.2",
+    "@vitejs/plugin-react": "4.7.0",
+    "electron": "33.4.11",
+    "electron-builder": "25.1.8",
+    "electron-vite": "2.3.0",
+    "jspdf": "2.5.2",
+    "konva": "9.3.22",
+    "lucide-react": "1.77.0",
+    "nanoid": "5.1.16",
+    "pdfjs-dist": "4.10.38",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-konva": "18.2.16",
+    "typescript": "5.9.3",
+    "vite": "5.4.21",
+    "vitest": "2.1.9",
+    "y-websocket": "2.1.0",
+    "zustand": "4.5.7"
+  }
+}

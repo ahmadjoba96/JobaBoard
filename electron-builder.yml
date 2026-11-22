@@ -1,0 +1,38 @@
+appId: com.jobaboard.app
+productName: JobaBoard
+directories:
+  buildResources: build
+  output: dist
+files:
+  - out/**/*
+  - package.json
+  - "!**/node_modules/leveldown/**"
+asar: true
+fileAssociations:
+  - ext: jboard
+    name: JobaBoard Board
+    description: JobaBoard whiteboard file
+    icon: build/icon.ico
+    role: Editor
+win:
+  icon: build/icon.ico
+  target:
+    - target: nsis
+      arch: [x64]
+    - target: portable
+      arch: [x64]
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: JobaBoard
+  artifactName: JobaBoard-Setup-${version}.exe
+portable:
+  artifactName: JobaBoard-Portable-${version}.exe
+publish:
+  provider: github
+  owner: OWNER_PLACEHOLDER
+  repo: JobaBoard
+  releaseType: release
